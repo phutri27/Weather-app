@@ -1,0 +1,121 @@
+header{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+
+.left,
+.right{
+  background-color: rgb(45, 44, 44);
+  flex: 0.5;
+}
+
+.location-form{
+  background-color: rgb(45, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.search-bar{
+  flex: 0.7;
+  height: 50px;
+  border-radius: 15px;
+  border:none;
+  margin-right: 15px;
+  padding-left: 15px;
+  background-color: gray;
+  color:white;
+  font-family: Bitcount Grid Single, Arial;
+  font-size: 15px;
+}
+
+.search-icon{
+  height: 20px;
+}
+.search-bar::placeholder{
+  color: white;
+  font-family: Bitcount Grid Single, Arial;
+  font-size: 15px;
+}
+
+.search-button{
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: gray;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out ;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.search-button:hover,
+.home-button:hover{
+  background-color: rgb(181, 181, 181);
+}
+
+.home-button{
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: gray;
+  cursor: pointer;
+  color:white;
+  font-family: Bitcount Grid Single, Arial;
+  transition: background-color 0.15s ease-in-out ;
+  font-size: 16px;
+}
+
+.left{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.btn-group button {
+  background-color: gray; 
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
+  font-family: Bitcount Grid Single, Arial;
+  height: 50px;
+  font-size: 17px;
+  transition: background-color 0.2s ease-in;
+}
+
+.cel{
+  border-radius: 20px 0 0 20px;
+}
+
+.fal{
+  border-radius: 0 20px 20px 0;
+}
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.btn-group .special{
+  background-color: rgb(180, 180, 180);
+}

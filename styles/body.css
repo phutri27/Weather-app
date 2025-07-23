@@ -1,0 +1,145 @@
+html, body{
+    background-color: rgb(45, 44, 44);
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}   
+
+
+.weather-grid {
+    background-color: rgb(45, 44, 44);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    height: 70%;
+    width: 70%;
+    position: relative;
+    margin-left: 250px;
+    font-family: Bitcount Grid Single, Arial;
+    
+}
+
+.temperature{
+    font-size:60px;
+    line-height:1;
+    margin:0;
+}
+
+.weather-details{
+    background-color: rgb(87, 86, 86);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 520px;
+    border-radius: 20px;
+}
+.temp-container{
+    position: absolute;
+    bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    right: 20px;
+    left:20px;   
+    bottom : 40px;
+    height: 160px;
+
+}
+
+.weather-overview{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.temp{
+    background-color: rgb(123, 122, 122);
+    height: 120px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: background-color 0.15s ease-in;
+    color: rgb(225, 224, 224);
+    cursor: pointer;
+}
+
+.temp:hover{
+    background-color: rgb(145, 145, 145);
+}
+
+.city-name{
+    color: white;
+    display: flex;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+.image-temp{
+    display:flex;
+    align-items:center;   /* vertically center icon & number */
+    gap:50px;
+    color: white;
+    margin: 15px 0px 0px 0px;
+}
+
+
+.chi-so-phu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(87, 86, 86);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 540px;
+    border-radius: 20px;
+}
+
+.chi-so{
+    display: flex;
+    justify-content: space-around;
+    transition: background-color 0.2s ease-in;
+    border-radius: 20px;
+}
+
+.chi-so:hover{
+    background-color: gray;
+}
+
+.inner-chi-so{
+    flex: 1;
+    display: grid;
+    grid-template-rows: 20px 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Bitcount Grid Single, Arial;
+    color: rgb(213, 212, 212);
+}
+
+.icon-chi-so{
+    flex: 0.5;
+    margin-top: 50px;
+    height: 50px;
+    transform: scale(1.8);
+    margin-left: 40px;
+}
+
+.image{
+    font-size:100px;       /* match or slightly smaller than the 27° */
+    margin-left: 20px
+
+}
+
+.conditions{
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+}
+

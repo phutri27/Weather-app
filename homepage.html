@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/headers.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5eebe31b87.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <button class="home-button">Home</button>
+        </div>
+        <form class="location-form">
+            <input type="text" class="search-bar" placeholder="Enter a location">
+            <button type="submit" class="search-button">
+                <img class="search-icon" src="icons/search.svg">
+            </button>
+        </form>
+        <div class="right">
+            <div class="btn-group">
+                <button class="btn-primary cel">&#176;C</button>
+                <button class="btn-primary fal">&#176;F</button>
+            </div>
+            
+        </div>
+    </header>
+    <div class="weather-grid">
+
+    </div>
+    <script defer src="scripts/weather_fetch.js" type="module"></script>
+</body>
+</html>
